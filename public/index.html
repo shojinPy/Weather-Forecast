@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://www.svgrepo.com/show/530233/weather.svg" type="image/x-icon">
+    <title>Weather Forecast</title>
+    <!-- Links -->
+    <link rel="stylesheet" href="../src/output.css">
+    <script src="./main.js" defer></script>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<!-- NIGHT COLORS: from-blue-950 to-blue-700 -->
+<!-- DAY COLORS: from-blue-600 to-yellow-300 -->
+<body class="bg-neutral-300">
+    <div class="bg-neutral-50 mx-auto my-32 p-5 w-100 border-2 border-neutral-900 rounded-2xl">
+        <!-- Input -->
+        <section class="relative" name="input-section">
+            <input type="text" name="city" class="px-4 text-2xl text-center overflow-hidden w-full h-11 rounded-3xl border-2 border-neutral-800 outline-none" id="input-city">
+            <button class="px-3 rounded-full border-2 border-black absolute right-2 bottom-2 transition hover:bg-neutral-900 hover:text-white" id="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </section>
+
+        <!-- Output -->
+        <section class="my-5 hidden" id="parent">
+            <h2 class="my-2 px-2 text-5xl text-neutral-700 font-semibold text-right" name="weather-type" id="weather-label"></h2>
+            <div class="flex justify-between relative">
+                <div>
+                    <h1 class="text-5xl text-neutral-800 font-semibold absolute bottom-6" id="temp"></h1>
+                    <p id="temp-desc" class="text-neutral-600 absolute bottom-1"></p>
+                </div>
+                <img src="" class="bg-neutral-400 p-3 w-72 border-2 border-neutral-400 rounded-3xl transition hover:scale-1" alt="" id="weather-icon">
+            </div>
+        </section>
+    </div>
+</body>
+</html>
